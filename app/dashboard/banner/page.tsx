@@ -47,7 +47,7 @@ export default async function BannerRoute() {
         <Button asChild className="flex gap-x-2">
           <Link href="/dashboard/banner/create">
             <PlusCircle className="h-3.5 w-3.5" />
-            <span>Add Banner</span>
+            <span>Thêm mới Banner</span>
           </Link>
         </Button>
       </div>
@@ -55,15 +55,15 @@ export default async function BannerRoute() {
       <Card className="mt-5">
         <CardHeader>
           <CardTitle>Banners</CardTitle>
-          <CardDescription>Manage your banners</CardDescription>
+          <CardDescription>Quản lý Banner</CardDescription>
         </CardHeader>
         <CardContent>
           <Table>
             <TableHeader>
               <TableRow>
-                <TableHead>Image</TableHead>
-                <TableHead>Title</TableHead>
-                <TableHead className="text-end">Actions</TableHead>
+                <TableHead>Hình ảnh</TableHead>
+                <TableHead>Tiêu đề</TableHead>
+                <TableHead className="text-end">Chỉnh Sửa</TableHead>
               </TableRow>
             </TableHeader>
 
@@ -88,12 +88,12 @@ export default async function BannerRoute() {
                         </Button>
                       </DropdownMenuTrigger>
                       <DropdownMenuContent align="end">
-                        <DropdownMenuLabel>Actions</DropdownMenuLabel>
+                        <DropdownMenuLabel>Chỉnh Sửa</DropdownMenuLabel>
                         <DropdownMenuSeparator />
 
                         <DropdownMenuItem asChild>
                           <Link href={`/dashboard/banner/${item.id}/delete`}>
-                            Delete
+                            Xóa
                           </Link>
                         </DropdownMenuItem>
                       </DropdownMenuContent>

@@ -37,15 +37,15 @@ export default async function BagRoute() {
           </div>
 
           <h2 className="mt-6 text-xl font-semibold">
-            You dont have any products in your Bag
+            Bạn chưa có sản phẩm nào trong Giỏ Hàng của mình
           </h2>
           <p className="mb-8 mt-2 text-center text-sm leading-6 text-muted-foreground max-w-sm mx-auto">
-            You currently dont have any products in your shopping bag. Please
-            add some so that you can see them right here.
+            Hiện tại bạn chưa có sản phẩm nào trong túi mua sắm của mình. Vui
+            lòng thêm một số để bạn có thể nhìn thấy chúng ngay tại đây.
           </p>
 
           <Button asChild>
-            <Link href="/">Shop Now!</Link>
+            <Link href="/">Mua ngay!</Link>
           </Button>
         </div>
       ) : (
@@ -65,7 +65,7 @@ export default async function BagRoute() {
                 <div className="flex flex-col h-full justify-between">
                   <div className="flex items-center gap-x-2">
                     <p>{item.quantity} x</p>
-                    <p>${item.price}</p>
+                    <p>{item.price}đ</p>
                   </div>
 
                   <form action={delItem} className="text-end">
@@ -78,8 +78,8 @@ export default async function BagRoute() {
           ))}
           <div className="mt-10">
             <div className="flex items-center justify-between font-medium">
-              <p>Subtotal:</p>
-              <p>${new Intl.NumberFormat("en-US").format(totalPrice)}</p>
+              <p>Tổng phụ thu:</p>
+              <p>{new Intl.NumberFormat("en-US").format(totalPrice)}đ</p>
             </div>
 
             <form action={checkOut}>

@@ -46,30 +46,30 @@ export default function BannerRoute() {
             <ChevronLeft className="w-4 h-4" />
           </Link>
         </Button>
-        <h1 className="text-xl font-semibold tracking-tight">New Banner</h1>
+        <h1 className="text-xl font-semibold tracking-tight">Tạo Banner Mới</h1>
       </div>
 
       <Card className="mt-5">
         <CardHeader>
-          <CardTitle>Banner Details</CardTitle>
-          <CardDescription>Create your banner right here</CardDescription>
+          <CardTitle>Chi Tiết Banner</CardTitle>
+          <CardDescription>Tạo Banner tại đây</CardDescription>
         </CardHeader>
         <CardContent>
           <div className="flex flex-col gap-y-6">
             <div className="flex flex-col gap-3">
-              <Label>Name</Label>
+              <Label>Tiêu Đề</Label>
               <Input
                 name={fields.title.name}
                 key={fields.title.key}
                 defaultValue={fields.title.initialValue}
                 type="text"
-                placeholder="Create title for Banner"
+                placeholder="Đặt tiêu đề cho Banner"
               />
               <p className="text-red-500">{fields.title.errors}</p>
             </div>
 
             <div className="flex flex-col gap-3">
-              <Label>Image</Label>
+              <Label>Hình Ảnh</Label>
               <input
                 type="hidden"
                 value={image}
@@ -91,7 +91,7 @@ export default function BannerRoute() {
                     setImages(res[0].url);
                   }}
                   onUploadError={() => {
-                    alert("Something went wrong");
+                    alert("Đã xảy ra lỗi");
                   }}
                   endpoint="bannerImageRoute"
                 />
@@ -102,7 +102,7 @@ export default function BannerRoute() {
           </div>
         </CardContent>
         <CardFooter>
-          <SubmitButton text="Create Banner" />
+          <SubmitButton text="Tạo Banner" />
         </CardFooter>
       </Card>
     </form>

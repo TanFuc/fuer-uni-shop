@@ -6,19 +6,19 @@ import { usePathname } from "next/navigation";
 
 const links = [
   {
-    name: "Dashboard",
+    name: "Tổng Quan",
     href: "/dashboard",
   },
   {
-    name: "Orders",
+    name: "Đơn Hàng",
     href: "/dashboard/orders",
   },
   {
-    name: "Products",
+    name: "Sản Phẩm",
     href: "/dashboard/products",
   },
   {
-    name: "Banner Picture",
+    name: "Trang Banner",
     href: "/dashboard/banner",
   },
 ];

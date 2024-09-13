@@ -13,14 +13,16 @@ export default function CancelRoute() {
           </div>
 
           <div className="mt-3 text-center sm:mt-5 w-full">
-            <h3 className="text-lg leading-6 font-medium">Payment Cancelled</h3>
+            <h3 className="text-lg leading-6 font-medium">
+              Thanh toán đã bị hủy
+            </h3>
             <p className="mt-2 text-sm text-muted-foreground">
-              Something went wrong with your payment. You havent been charged.
-              Please try again
+              Đã xảy ra lỗi với khoản thanh toán của bạn. Bạn chưa bị tính phí.
+              Vui lòng thử lại!
             </p>
 
             <Button asChild className="w-full mt-5 sm:mt-6">
-              <Link href="/">Back to Homepage</Link>
+              <Link href="/">Quay lại trang chủ</Link>
             </Button>
           </div>
         </div>

@@ -7,27 +7,27 @@ import { usePathname } from "next/navigation";
 export const navbarLinks = [
   {
     id: 0,
-    name: "Home",
+    name: "Trang chủ",
     href: "/",
   },
   {
     id: 1,
-    name: "All Products",
+    name: "Tất Cả Sản Phẩm",
     href: "/products/all",
   },
   {
     id: 2,
-    name: "Men",
+    name: "Thực Phẩm",
     href: "/products/men",
   },
   {
     id: 3,
-    name: "Women",
+    name: "Hàng Gia Dụng",
     href: "/products/women",
   },
   {
     id: 4,
-    name: "Kids",
+    name: "Thời Trang",
     href: "/products/kids",
   },
 ];

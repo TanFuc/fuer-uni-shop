@@ -24,7 +24,7 @@ export function SubmitButton({ text, variant }: buttonProps) {
       {pending ? (
         <Button disabled variant={variant}>
           <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-          Please Wait
+          Vui lòng chờ
         </Button>
       ) : (
         <Button variant={variant} type="submit">
@@ -42,11 +42,11 @@ export function ShoppingBagButton() {
     <>
       {pending ? (
         <Button disabled size="lg" className="w-full mt-5">
-          <Loader2 className="mr-4 h-5 w-5 animate-spin" /> Please Wait
+          <Loader2 className="mr-4 h-5 w-5 animate-spin" /> Vui lòng chờ
         </Button>
       ) : (
         <Button size="lg" className="w-full mt-5" type="submit">
-          <ShoppingBag className="mr-4 h-5 w-5" /> Add to Cart
+          <ShoppingBag className="mr-4 h-5 w-5" /> Thêm Vào Giỏ Hàng
         </Button>
       )}
     </>
@@ -60,11 +60,11 @@ export function DeleteItem() {
     <>
       {pending ? (
         <button disabled className="font-medium text-primary text-end">
-          Removing...
+          Đang xóa...
         </button>
       ) : (
         <button type="submit" className="font-medium text-primary text-end">
-          Delete
+          Xóa
         </button>
       )}
     </>
@@ -77,11 +77,11 @@ export function ChceckoutButton() {
     <>
       {pending ? (
         <Button disabled size="lg" className="w-full mt-5">
-          <Loader2 className="mr-2 h-5 w-5 animate-spin" /> Please Wait
+          <Loader2 className="mr-2 h-5 w-5 animate-spin" /> Vui lòng chờ
         </Button>
       ) : (
         <Button type="submit" size="lg" className="w-full mt-5">
-          Checkout
+          Thanh toán
         </Button>
       )}
     </>

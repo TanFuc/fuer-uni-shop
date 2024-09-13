@@ -73,14 +73,16 @@ export function EditForm({ data }: iAppProps) {
             <ChevronLeft className="w-4 h-4" />
           </Link>
         </Button>
-        <h1 className="text-xl font-semibold tracking-tight">Edit Product</h1>
+        <h1 className="text-xl font-semibold tracking-tight">
+          Chỉnh Sửa Sản Phẩm
+        </h1>
       </div>
 
       <Card className="mt-5">
         <CardHeader>
-          <CardTitle>Product Details</CardTitle>
+          <CardTitle>Chi Tiết Sản Phẩm</CardTitle>
           <CardDescription>
-            In this form you can update your product
+            Trong biểu mẫu này, bạn có thể cập nhật sản phẩm của mình
           </CardDescription>
         </CardHeader>
         <CardContent>
@@ -100,7 +102,7 @@ export function EditForm({ data }: iAppProps) {
             </div>
 
             <div className="flex flex-col gap-3">
-              <Label>Description</Label>
+              <Label>Miêu Tả</Label>
               <Textarea
                 key={fields.description.key}
                 name={fields.description.name}
@@ -110,19 +112,19 @@ export function EditForm({ data }: iAppProps) {
               <p className="text-red-500">{fields.description.errors}</p>
             </div>
             <div className="flex flex-col gap-3">
-              <Label>Price</Label>
+              <Label>Giá</Label>
               <Input
                 key={fields.price.key}
                 name={fields.price.name}
                 defaultValue={data.price}
                 type="number"
-                placeholder="$55"
+                placeholder="55đ"
               />
               <p className="text-red-500">{fields.price.errors}</p>
             </div>
 
             <div className="flex flex-col gap-3">
-              <Label>Featured Product</Label>
+              <Label>Sản Phẩm Nổi Bật</Label>
               <Switch
                 key={fields.isFeatured.key}
                 name={fields.isFeatured.name}
@@ -132,7 +134,7 @@ export function EditForm({ data }: iAppProps) {
             </div>
 
             <div className="flex flex-col gap-3">
-              <Label>Status</Label>
+              <Label>Trạng Thái</Label>
               <Select
                 key={fields.status.key}
                 name={fields.status.name}
@@ -142,16 +144,16 @@ export function EditForm({ data }: iAppProps) {
                   <SelectValue placeholder="Select Status" />
                 </SelectTrigger>
                 <SelectContent>
-                  <SelectItem value="draft">Draft</SelectItem>
-                  <SelectItem value="published">Published</SelectItem>
-                  <SelectItem value="archived">Archived</SelectItem>
+                  <SelectItem value="draft">draft</SelectItem>
+                  <SelectItem value="published">published</SelectItem>
+                  <SelectItem value="archived">archived</SelectItem>
                 </SelectContent>
               </Select>
               <p className="text-red-500">{fields.status.errors}</p>
             </div>
 
             <div className="flex flex-col gap-3">
-              <Label>Category</Label>
+              <Label>Loại</Label>
               <Select
                 key={fields.category.key}
                 name={fields.category.name}
@@ -172,7 +174,7 @@ export function EditForm({ data }: iAppProps) {
             </div>
 
             <div className="flex flex-col gap-3">
-              <Label>Images</Label>
+              <Label>Hình Ảnh</Label>
               <input
                 type="hidden"
                 value={images}

@@ -14,15 +14,15 @@ export default function SuccessRoute() {
 
           <div className="mt-3 text-center sm:mt-5 w-full">
             <h3 className="text-lg leading-6 font-medium">
-              Payment Successfull
+              Thanh toán thành công
             </h3>
             <p className="mt-2 text-sm text-muted-foreground">
-              Congrats to your purchase. Your payment was succesfull. We hope
-              you enjoy your product.
+              Chúc mừng bạn đã mua hàng. Thanh toán của bạn đã thành công. Chúng
+              tôi hy vọng bạn thích sản phẩm của chúng tôi.
             </p>
 
             <Button asChild className="w-full mt-5 sm:mt-6">
-              <Link href="/">Back to Homepage</Link>
+              <Link href="/">Quay lại trang chủ</Link>
             </Button>
           </div>
         </div>

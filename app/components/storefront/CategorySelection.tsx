@@ -1,22 +1,22 @@
 import Image from "next/image";
 import Link from "next/link";
-import all from "@/public/all.jpeg";
-import men from "@/public/men.jpeg";
-import women from "@/public/women.jpeg";
+import all from "@/public/all.jpg";
+import men from "@/public/men.jpg";
+import women from "@/public/women.jpg";
 
 export function CategoriesSelection() {
   return (
     <div className="py-24 sm:py-32">
       <div className="flex justify-between items-center">
         <h2 className="text-2xl font-extrabold tracking-tight">
-          Shop by Category
+          Mua sắm theo danh mục
         </h2>
 
         <Link
           className="text-sm font-semibold text-primary hover:text-primary/80"
           href="/products/all"
         >
-          Browse all Products &rarr;
+          Tất cả sản phẩm &rarr;
         </Link>
       </div>
 
@@ -30,8 +30,8 @@ export function CategoriesSelection() {
           <div className="bg-gradient-to-b from-transparent to-black opacity-55" />
           <div className="p-6 flex items-end">
             <Link href="/products/all">
-              <h3 className="text-white font-semibold">All Products</h3>
-              <p className="mt-1 text-sm text-white">Shop Now</p>
+              <h3 className="text-white font-semibold">Tất Cả Sản Phẩm</h3>
+              <p className="mt-1 text-sm text-white">Mua Ngay</p>
             </Link>
           </div>
         </div>
@@ -45,8 +45,8 @@ export function CategoriesSelection() {
           <div className="bg-gradient-to-b from-transparent to-black opacity-55 sm:absolute sm:inset-0" />
           <div className="p-6 flex items-end sm:absolute sm:inset-0">
             <Link href="/products/men">
-              <h3 className="text-white font-semibold">Products for Men</h3>
-              <p className="mt-1 text-sm text-white">Shop Now</p>
+              <h3 className="text-white font-semibold">Thực Phẩm</h3>
+              <p className="mt-1 text-sm text-white">Mua Ngay</p>
             </Link>
           </div>
         </div>
@@ -60,8 +60,8 @@ export function CategoriesSelection() {
           <div className="bg-gradient-to-b from-transparent to-black opacity-55 sm:absolute sm:inset-0" />
           <div className="p-6 flex items-end sm:absolute sm:inset-0">
             <Link href="/products/women">
-              <h3 className="text-white font-semibold">Products for Women</h3>
-              <p className="mt-1 text-sm text-white">Shop Now</p>
+              <h3 className="text-white font-semibold">Hàng Gia Dụng</h3>
+              <p className="mt-1 text-sm text-white">Mua Ngay</p>
             </Link>
           </div>
         </div>

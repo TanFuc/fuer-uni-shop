@@ -47,27 +47,27 @@ export default async function ProductsRoute() {
         <Button asChild className="flex items-center gap-x-2">
           <Link href="/dashboard/products/create">
             <PlusCircle className="w-3.5 h-3.5" />
-            <span>Add Product</span>
+            <span>Thêm sản phẩm</span>
           </Link>
         </Button>
       </div>
       <Card className="mt-5">
         <CardHeader>
-          <CardTitle>Products</CardTitle>
+          <CardTitle>Sản Phẩm</CardTitle>
           <CardDescription>
-            Manage your products and view their sales performance
+            Quản lý sản phẩm của bạn và xem hiệu suất bán hàng của họ
           </CardDescription>
         </CardHeader>
         <CardContent>
           <Table>
             <TableHeader>
               <TableRow>
-                <TableHead>Image</TableHead>
-                <TableHead>Name</TableHead>
-                <TableHead>Status</TableHead>
-                <TableHead>Price</TableHead>
-                <TableHead>Date</TableHead>
-                <TableHead className="text-end">Actions</TableHead>
+                <TableHead>Hình ảnh</TableHead>
+                <TableHead>Tên</TableHead>
+                <TableHead>Trạng Thái</TableHead>
+                <TableHead>Giá</TableHead>
+                <TableHead>Ngày</TableHead>
+                <TableHead className="text-end">Chỉnh Sửa</TableHead>
               </TableRow>
             </TableHeader>
             <TableBody>
@@ -84,7 +84,7 @@ export default async function ProductsRoute() {
                   </TableCell>
                   <TableCell>{item.name}</TableCell>
                   <TableCell>{item.status}</TableCell>
-                  <TableCell>${item.price}</TableCell>
+                  <TableCell>{item.price}đ</TableCell>
                   <TableCell>
                     {new Intl.DateTimeFormat("en-US").format(item.createdAt)}
                   </TableCell>
@@ -96,16 +96,16 @@ export default async function ProductsRoute() {
                         </Button>
                       </DropdownMenuTrigger>
                       <DropdownMenuContent align="end">
-                        <DropdownMenuLabel>Actions</DropdownMenuLabel>
+                        <DropdownMenuLabel>Chỉnh Sửa</DropdownMenuLabel>
                         <DropdownMenuSeparator />
                         <DropdownMenuItem asChild>
                           <Link href={`/dashboard/products/${item.id}`}>
-                            Edit
+                            Sửa
                           </Link>
                         </DropdownMenuItem>
                         <DropdownMenuItem asChild>
                           <Link href={`/dashboard/products/${item.id}/delete`}>
-                            Delete
+                            Xóa
                           </Link>
                         </DropdownMenuItem>
                       </DropdownMenuContent>

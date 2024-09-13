@@ -29,7 +29,7 @@ export async function RecentSales() {
   return (
     <Card>
       <CardHeader>
-        <CardTitle>Recent sales</CardTitle>
+        <CardTitle>Doanh thu gần đây</CardTitle>
       </CardHeader>
       <CardContent className="flex flex-col gap-8">
         {data.map((item) => (
@@ -47,7 +47,7 @@ export async function RecentSales() {
               </p>
             </div>
             <p className="ml-auto font-medium">
-              +${new Intl.NumberFormat("en-US").format(item.amount / 100)}
+              +{new Intl.NumberFormat("en-US").format(item.amount / 100)}đ
             </p>
           </div>
         ))}

@@ -60,56 +60,54 @@ export default function ProductCreateRoute() {
             <ChevronLeft className="w-4 h-4" />
           </Link>
         </Button>
-        <h1 className="text-xl font-semibold tracking-tight">New Product</h1>
+        <h1 className="text-xl font-semibold tracking-tight">Sản Phẩm Mới</h1>
       </div>
 
       <Card className="mt-5">
         <CardHeader>
-          <CardTitle>Product Details</CardTitle>
-          <CardDescription>
-            In this form you can create your product
-          </CardDescription>
+          <CardTitle>Chi Tiết Sản Phẩm</CardTitle>
+          <CardDescription>Bắt đầu tạo sản phẩm của mình</CardDescription>
         </CardHeader>
         <CardContent>
           <div className="flex flex-col gap-6">
             <div className="flex flex-col gap-3">
-              <Label>Name</Label>
+              <Label>Tên Sản Phẩm</Label>
               <Input
                 type="text"
                 key={fields.name.key}
                 name={fields.name.name}
                 defaultValue={fields.name.initialValue}
                 className="w-full"
-                placeholder="Product Name"
+                placeholder="Tên Sản Phẩm"
               />
 
               <p className="text-red-500">{fields.name.errors}</p>
             </div>
 
             <div className="flex flex-col gap-3">
-              <Label>Description</Label>
+              <Label>Mô tả</Label>
               <Textarea
                 key={fields.description.key}
                 name={fields.description.name}
                 defaultValue={fields.description.initialValue}
-                placeholder="Write your description right here..."
+                placeholder="Nhập mô tả"
               />
               <p className="text-red-500">{fields.description.errors}</p>
             </div>
             <div className="flex flex-col gap-3">
-              <Label>Price</Label>
+              <Label>Giá</Label>
               <Input
                 key={fields.price.key}
                 name={fields.price.name}
                 defaultValue={fields.price.initialValue}
                 type="number"
-                placeholder="$55"
+                placeholder="250.000"
               />
               <p className="text-red-500">{fields.price.errors}</p>
             </div>
 
             <div className="flex flex-col gap-3">
-              <Label>Featured Product</Label>
+              <Label>Mục Nổi Bật</Label>
               <Switch
                 key={fields.isFeatured.key}
                 name={fields.isFeatured.name}
@@ -119,7 +117,7 @@ export default function ProductCreateRoute() {
             </div>
 
             <div className="flex flex-col gap-3">
-              <Label>Status</Label>
+              <Label>Trạng Thái</Label>
               <Select
                 key={fields.status.key}
                 name={fields.status.name}
@@ -138,7 +136,7 @@ export default function ProductCreateRoute() {
             </div>
 
             <div className="flex flex-col gap-3">
-              <Label>Category</Label>
+              <Label>Loại Mặt Hàng</Label>
               <Select
                 key={fields.category.key}
                 name={fields.category.name}
@@ -159,7 +157,7 @@ export default function ProductCreateRoute() {
             </div>
 
             <div className="flex flex-col gap-3">
-              <Label>Images</Label>
+              <Label>Hình Ảnh</Label>
               <input
                 type="hidden"
                 value={images}
