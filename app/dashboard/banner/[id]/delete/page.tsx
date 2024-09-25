@@ -19,19 +19,19 @@ export default function DeleteBannerRoute({
     <div className="h-[80vh] w-full flex items-center justify-center">
       <Card className="max-w-xl">
         <CardHeader>
-          <CardTitle>Are you absolutely sure?</CardTitle>
+          <CardTitle>Bạn có hoàn toàn chắc chắn không?</CardTitle>
           <CardDescription>
-            This action cannot be undone. This will permanently delete this
-            banner and remove all data from our servers.
+            Không thể hoàn tác hành động này. Thao tác này sẽ xóa vĩnh viễn nội
+            dung này biểu ngữ và xóa tất cả dữ liệu khỏi máy chủ.
           </CardDescription>
         </CardHeader>
         <CardFooter className="w-full flex justify-between">
           <Button variant="secondary" asChild>
-            <Link href="/dashboard/banner">Cancel</Link>
+            <Link href="/dashboard/banner">Hủy</Link>
           </Button>
           <form action={deleteBanner}>
             <input type="hidden" name="bannerId" value={params.id} />
-            <SubmitButton variant="destructive" text="Delete Product" />
+            <SubmitButton variant="destructive" text="Xóa" />
           </form>
         </CardFooter>
       </Card>

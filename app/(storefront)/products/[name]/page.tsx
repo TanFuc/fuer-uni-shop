@@ -40,7 +40,7 @@ async function getData(productCategory: string) {
       });
 
       return {
-        title: "Products for Men",
+        title: "Thực Phẩm",
         data: data,
       };
     }
@@ -60,7 +60,7 @@ async function getData(productCategory: string) {
       });
 
       return {
-        title: "Products to Women",
+        title: "Hàng Gia Dụng",
         data: data,
       };
     }
@@ -80,7 +80,7 @@ async function getData(productCategory: string) {
       });
 
       return {
-        title: "Products for Kids",
+        title: "Thời Trang",
         data: data,
       };
     }
