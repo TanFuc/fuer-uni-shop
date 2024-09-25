@@ -20,7 +20,7 @@ async function getData(productCategory: string) {
       });
 
       return {
-        title: "All Products",
+        title: "Tất Cả Sản Phẩm",
         data: data,
       };
     }
